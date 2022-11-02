@@ -23,12 +23,13 @@ elePlay.addEventListener('click', function(){
         for (let i = 1; i < 101; i++) {
 
             eleCell = document.createElement('div');
-            eleCell.classList.add('cell-100');
+            eleCell.classList.toggle('cell-100');
             eleGrid.append(eleCell);
             eleCell.innerHTML = [i];   
 
             eleCell.addEventListener('click', function() {
                 this.classList.toggle('active');
+                console.log([i]);
             });                
         }    
     } else if (eleDifficulty === 'medium'){
@@ -41,6 +42,7 @@ elePlay.addEventListener('click', function(){
         
             eleCell.addEventListener('click', function() {
                 this.classList.toggle('active');
+                console.log([i]);
             });                
         }
     } else if (eleDifficulty === 'hard'){
@@ -53,6 +55,7 @@ elePlay.addEventListener('click', function(){
         
             eleCell.addEventListener('click', function() {
                 this.classList.toggle('active');
+                console.log([i]);
             });                
         }
     }
