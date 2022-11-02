@@ -16,12 +16,12 @@ const elePlay = document.querySelector('.btn-play');
 elePlay.addEventListener('click', function(){
 
     const eleGrid = document.querySelector('.grid');
+    eleGrid.replaceChildren();
     const eleDifficulty = document.querySelector('#difficulty').value;
     
     
     if (eleDifficulty === 'easy'){
         for (let i = 1; i < 101; i++) {
-
             eleCell = document.createElement('div');
             eleCell.classList.toggle('cell-100');
             eleGrid.append(eleCell);
