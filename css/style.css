@@ -41,32 +41,16 @@ html{
     height: 600px;
 }
 
-div[class*="cell"]{
+.cell{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
 }
 
-div[class*="cell"]:hover{
+.cell:hover{
     cursor: pointer;
 }
-
-.cell-100{
-    height: calc(100% / 10);
-    width: calc(100% / 10);
-}
-
-.cell-81{
-    height: calc(100% / 9);
-    width: calc(100% / 9);
-}
-
-.cell-49{
-    height: calc(100% / 7);
-    width: calc(100% / 7);
-}
-
 
 .active{
     background-color: rgb(0, 162, 232);
